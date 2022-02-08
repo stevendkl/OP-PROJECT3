@@ -114,9 +114,11 @@ main h1 {
 .filter {
    padding: 30px 20px 0px 20px;
    display: flex;
-   flex-wrap: wrap;
+   flex-wrap: nowrap;
    text-align: center;
    justify-content: center;
+   flex-direction: column;
+   align-items: center;
 }
 h2 {
    font-size: 24px;
@@ -317,6 +319,7 @@ footer {
 footer h4 {
    font-family: 'Shrikhand', Arial;
    font-weight: 100;
+   padding-left: 0.5rem;
 }
 footer ul {
    display: flex;
@@ -530,16 +533,17 @@ footer ul li a {
     }
     
     .menu__btn-order {
-      width: 19rem;
+      width: 18rem;
       margin: 0 auto;
       text-align: center;
-      height: 40px;
-      line-height: 40px;
-      border-radius: 20px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 25px;
       background-image: linear-gradient(var(--Secondary) 1%, var(--Primary));
       color: white;
       text-decoration: none;
       box-shadow: 0 5px 5px #d3d3d3;
+      font-size: 1.5rem;
     }
     
     .restaurant-name {
@@ -590,7 +594,7 @@ footer ul li a {
     }
     
     .heart .fas.fa-heart {
-      background: linear-gradient(var(--Secondary) 1%, var(--Primary));
+      background: linear-gradient(var(--Primary) 1%, var(--Secondary));
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
