@@ -78,7 +78,10 @@ main {
    background-color: var(--grey_search);
    text-align: center;
    align-content: center;
-   justify-content: center
+   justify-content: center;
+   font-weight: bold;
+   line-height: 1.5rem;
+   font-size: 1.5rem;
 }
 .search_icon {
    font-size: 16px;
@@ -435,6 +438,10 @@ footer ul li a {
       margin-bottom: 0rem;
     }
     
+   .menu_enchanted-plate {
+      height: 1820px;
+   }
+
     .menu {
       display: flex;
       flex-direction: column;
@@ -615,6 +622,10 @@ footer ul li a {
    
     .course__dish--animation:nth-of-type(3n+3) {
       animation-delay: 1.1s;
+    }
+
+    .course__dish--animation:nth-of-type(3n+4) {
+      animation-delay: 1.3s;
     }
 
     .course__dish:hover .course__dish-price {
