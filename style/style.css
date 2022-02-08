@@ -41,12 +41,23 @@ header {
 }
 /* class of logo */
 .logo {
-   flex-grow: 1;
-   padding-left: 20px;
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 20px;
    width:100%;
    box-shadow: 0 0 7px 0 #D3D3D3;
    z-index: 90;
 }
+
+.logo_menu {
+   flex-direction: row;
+   height: 60px;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   padding-left: 0px;
+   margin: auto;   
+}
+
 /* class of navi bar */
 nav {
    display: block;
@@ -112,7 +123,7 @@ main h1 {
 }
 /* class of filter icons */
 .filter {
-   padding: 30px 20px 0px 20px;
+   padding: 30px 20px 30px 20px;
    display: flex;
    flex-wrap: nowrap;
    text-align: center;
@@ -226,7 +237,6 @@ h2 {
 }
 /* class of section accomodations */
 .accommodations {
-   flex-basis: 60%;
    justify-content: space-between;
    background-color: var(--grey_back);
    border-radius: 25px;
@@ -264,7 +274,7 @@ h3 {
 }
 .content_text {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    flex-wrap: wrap;
    padding-left:5px;
    padding-top:5px;
@@ -346,18 +356,35 @@ footer ul li a {
    padding-left: 4px;
 }
 /* adjust logo size */
-.logo img{
+.logo img {
    object-fit: contain;
    height: 50px;
    padding-top: 30px;
 }
+
+.logo_menu img {
+   height:100%;
+   width:100%;
+   padding-top: 0px;
+}
+
+/* layout of desktop */
+@media screen and (min-width: 992px) {
+   .logo_menu a {
+      padding-top: 1.5rem;
+   }
+}
+
 
 /* layout of mobile phone */
 @media screen and (max-width: 991px) {
    .logo {
       height: 30px;
       padding-top: 20px;
-      padding-bottom: 20px;      
+      padding-bottom: 20px;   
+      padding-left: 0px;
+      margin: auto;
+      flex-direction: row;   
    }
    .logo img{
       padding-top: 0px;
@@ -367,10 +394,6 @@ footer ul li a {
    /* class of header area */
    header {
       flex-direction: column;
-   }
-   .logo {
-      padding-left: 0px;
-      margin: auto;
    }
    nav ul {
       margin-left: -40px;
@@ -465,8 +488,8 @@ footer ul li a {
    }
 }
 
-/* layout of tablet */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+/* layout of tablet and desktop*/
+@media screen and (min-width: 768px) {
    /* class of section popular */
    .popular_info {
       height: 525px;
@@ -503,13 +526,12 @@ footer ul li a {
    }
 }
 /* class of menu page */
-@media screen and (max-width: 991px) {
    html {
       font-size: 62.5%;
     }
    .menu--wrapper {
       background-color: var(--grey_back);
-      max-width: 960px;
+      max-width: 992px;
       margin: 0 auto;
       overflow: hidden;
       height:1680px;
@@ -519,7 +541,7 @@ footer ul li a {
     .menu {
       display: flex;
       flex-direction: column;
-      max-width: 960px;
+      max-width: 992px;
       padding-left: 2rem;
       padding-right: 2rem;
       margin: 0 auto;
@@ -779,10 +801,10 @@ footer ul li a {
       max-height: 25rem;
       -o-object-fit: cover;
          object-fit: cover;
-      -o-object-position: bottom;
-         object-position: bottom;
+      -o-object-position: center;
+         object-position: center;
     }
-}
+
 /* loading spinner */
 .spinner {
    padding-top: 80%;
