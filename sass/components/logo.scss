@@ -1,0 +1,12 @@
+/* adjust logo size */
+.logo img {
+    object-fit: contain;
+    height: 50px;
+    padding-top: 30px;
+ }
+ 
+ .logo_menu img {
+    height:100%;
+    width:100%;
+    padding-top: 0px;
+ }

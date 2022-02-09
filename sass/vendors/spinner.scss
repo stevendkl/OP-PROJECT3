@@ -1,0 +1,51 @@
+/* loading spinner */
+.spinner {
+    padding-top: 80%;
+    padding-bottom: 400%;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 10px;
+    position:absolute;
+    opacity: 1;
+    background-color: var(--grey_search);
+    z-index: 100;
+    animation: opacity .2s 3s 1 linear forwards;
+  }
+ 
+  @media screen and (min-width: 768px) {
+    .spinner {
+       padding-top: 30%;
+       padding-bottom: 100%;
+    }
+  }
+ 
+  .spinner > div {
+    background-color: var(--Tertiary);
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+ 

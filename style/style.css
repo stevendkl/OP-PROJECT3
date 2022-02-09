@@ -115,6 +115,13 @@ h2 {
    color: white;
    text-decoration: none;
    box-shadow: 0 5px 5px #d3d3d3;
+   font-size: 1.5rem;
+}
+.filter_button:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  -webkit-box-shadow: 0 5px 8px grey;
+          box-shadow: 0 5px 8px grey;
 }
 .filter p {
    font-size: 18px;
@@ -211,7 +218,7 @@ h2 {
    padding: 0px 30px 30px 30px;
 }
 h3 {
-   font-size: 16px;
+   font-size: 2rem;
 }
 .content_info {
    display: flex;
@@ -244,8 +251,8 @@ h3 {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   padding-left:5px;
-   padding-top:5px;
+   padding-left:10px;
+   padding-top:15px;
    font-size: 12px;
    text-align: left;
    line-height: 20px;
@@ -259,8 +266,8 @@ h3 {
    padding: .8rem 2.6rem;
    font-size: 1.4rem;
    font-weight: bold;
-   color: #098c6c;
-   background-color: var(--Tertiary);
+   color: darken(#99E2D0, 40%);
+   background-color: #99E2D0;
 }
 
 .hotel {
@@ -403,11 +410,12 @@ footer ul li a {
    .footer_info {
       width: 100%;
    }
-   /* adjust font size */
-   .activities_text, .popular_text, .content_text {
-      font-size: 14px;
-   }
 }
+/* adjust font size */
+.activities_text, .popular_text, .content_text {
+   font-size: 1.6rem;
+}
+
 /* layout of tablet and desktop*/
 @media screen and (min-width: 768px) {
    /* class of section accomodations */
@@ -434,12 +442,12 @@ footer ul li a {
       max-width: 992px;
       margin: 0 auto;
       overflow: hidden;
-      height:1680px;
+      height:1460px;
       margin-bottom: 0rem;
     }
     
    .menu_enchanted-plate {
-      height: 1820px;
+      height: 1560px;
    }
 
     .menu {
@@ -470,6 +478,13 @@ footer ul li a {
       text-decoration: none;
       box-shadow: 0 5px 5px #d3d3d3;
       font-size: 1.5rem;
+    }
+
+    .menu__btn-order:hover {
+      -webkit-filter: brightness(120%);
+              filter: brightness(120%);
+      -webkit-box-shadow: 0 5px 8px grey;
+              box-shadow: 0 5px 8px grey;
     }
     
     .restaurant-name {
@@ -589,13 +604,13 @@ footer ul li a {
       display: flex;
       justify-content: space-between;
       background-color: #fff;
-      margin-bottom: 1rem;
+      margin-bottom: 1.6rem;
       border-radius: 1.5rem;
       padding: 1.3rem 2rem 1rem 1.3rem;
       box-shadow: 0 5px 5px #ddd;
       cursor: pointer;
       overflow: hidden;
-      animation: down-slide .5s backwards;
+      animation: down-slide 0.5s backwards;
     }
 
     @keyframes down-slide {
@@ -644,14 +659,16 @@ footer ul li a {
     
     .course__dish-name {
       font-size: 1.8rem;
+      margin-top: .3rem;
       margin-bottom: .3rem;
-      white-space: normal;
-      overflow: unset;
-      text-overflow: unset;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     
     .course__dish-details {
       font-size: 1.6rem;
+      margin-top: .3rem;
       margin-bottom: .3rem;
       white-space: nowrap;
       overflow: hidden;

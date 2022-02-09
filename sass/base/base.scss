@@ -1,0 +1,316 @@
+/* set fonts */
+* {
+    font-family: 'Roboto', Arial;
+ }
+ /* mistake, next time remember add this: 
+ * {
+    margin: 0;
+    padding: 0;
+  }
+ */
+ body {
+    margin: 0 auto;
+ }
+ 
+ .menu_body {
+    background: var(--grey_back);
+ }
+ 
+ .wrap {
+    background-color: var(--grey_back);
+ }
+ /* class of head */
+ header {
+    margin: 0 auto;
+    max-width: 992px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+ }
+ /* class of logo */
+ .logo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    width:100%;
+    box-shadow: 0 0 7px 0 #D3D3D3;
+    z-index: 90;
+ }
+ 
+ .logo_menu {
+    flex-direction: row;
+    height: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    margin: auto;   
+ }
+ 
+ a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+ }
+ 
+ /* class of main body */
+ main {
+    margin: 0 auto;
+    max-width: 992px;
+ }
+ 
+ /* class of search bar */
+ .search {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40px;
+    background-color: var(--grey_search);
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+ }
+ .search_icon {
+    font-size: 16px;
+    min-width: 40px;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+ }
+ /* class of filter icons */
+ .filter {
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+ h2 {
+    font-size: 24px;
+    min-width: 60px;
+    height: 40px;
+    font-weight: bold;
+ }
+ .filter a {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    background-image: linear-gradient(var(--Secondary) 1%, var(--Primary));
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 5px 5px #d3d3d3;
+    font-size: 1.5rem;
+ }
+ .filter_button:hover {
+   -webkit-filter: brightness(120%);
+           filter: brightness(120%);
+   -webkit-box-shadow: 0 5px 8px grey;
+           box-shadow: 0 5px 8px grey;
+ }
+ .filter p {
+    font-size: 18px;
+ }
+ 
+ /* class of tips icons */
+ .tips {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    background-color: white;
+ }
+ 
+ .tips h2 {
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+ }
+ 
+ .tips_step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+    margin-right: 2rem;
+ }
+ 
+ .tips_step_no {
+    position: relative;
+    width: calc(100% - 1rem);
+    height: 8rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    background-color: var(--grey_back);
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    box-shadow: 0 5px 5px var(--grey_search);
+  }
+ 
+ .tips_number {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    background-color: var(--Primary);
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 50%;
+  }
+ 
+ .tips_text {
+    position: absolute;
+    top: 50%;
+    left: 7.5rem;
+    transform: translateY(-50%);
+ }
+ 
+ .tips_step .fas {
+    font-size: 2rem;
+    line-height: 8rem;
+    margin-left: 3rem;
+    margin-right: 2.5rem;
+    color: #6f6f6f;
+  }
+ 
+  .tips_step_no3 {
+    background-color: #F5EDFF;
+  }
+  
+  .tips_step_no3 .fas {
+    color: var(--Primary);
+  }
+ 
+ /* class of content area */
+ .content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 992px;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+ /* class of section accomodations */
+ .accommodations {
+    justify-content: space-between;
+    background-color: var(--grey_back);
+    border-radius: 25px;
+    padding: 0px 30px 30px 30px;
+ }
+ h3 {
+    font-size: 2rem;
+ }
+ .content_info {
+    display: flex;
+    flex-wrap: wrap;
+    height: 360px;
+    justify-content: space-between;
+    align-content: space-between;
+ }
+ .content_location {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 250px;
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 0 rgb(150, 150, 150);
+    overflow: hidden;
+    /* locate "new" positon */
+    position:relative;
+ }
+ .content_figure {
+    height:170px;
+ }
+ .content_figure img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+ }
+ .content_text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left:10px;
+    padding-top:15px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 20px;
+    box-sizing: border-box;
+ }
+ 
+ .new {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    padding: .8rem 2.6rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: darken(#99E2D0, 40%);
+    background-color: #99E2D0;
+ }
+ 
+ .hotel {
+    font-weight: bold;
+ }
+ 
+ /* class of footer area */
+ footer {
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 992px;
+    background-color: var(--footer_black);
+ }
+ .footer_content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 12px;
+    color: white;
+ }
+ .footer_info {
+    width: 30%;
+ }
+ footer h4 {
+    font-family: 'Shrikhand', Arial;
+    font-weight: 100;
+    padding-left: 0.5rem;
+ }
+ footer ul {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0px;
+ }
+ footer ul li {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 10px;   
+ }
+ footer ul li a {
+    color: white;   
+ }
+ .help_icon .fas {
+    transform: scaleX(0.7);
+    width:30px;
+ }
+ .suggest_icon .fas {
+    padding-left: 5px;
+    width:25px;
+ }
+ .help_text {
+    padding-left: 4px;
+ }
+ 
